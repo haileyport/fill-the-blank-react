@@ -17,14 +17,14 @@ function App() {
         <div>
           <Menu />
         </div>
-        <div className="bg-teal-800 border-2 border-rose-600">
+        <div className="h-screen bg-teal-800 border-2 border-rose-600">
           <Routes>
-            <Route to="/" element={<Main />}></Route>
-            <Route to="/meta" element={<Meta />}></Route>
-            <Route to="/html" element={<Html />}></Route>
-            <Route to="/css" element={<CSS />}></Route>
-            <Route to="/javascript1" element={<JS1 />}></Route>
-            <Route to="/javascript2" element={<JS2 />}></Route>
+            <Route path="/" element={<Main />}></Route>
+            <Route path="/meta" element={<Meta />}></Route>
+            <Route path="/html" element={<Html />}></Route>
+            <Route path="/css" element={<CSS />}></Route>
+            <Route path="/javascript1" element={<JS1 />}></Route>
+            <Route path="/javascript2" element={<JS2 />}></Route>
           </Routes>
         </div>
       </div>
