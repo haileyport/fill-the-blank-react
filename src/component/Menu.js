@@ -10,7 +10,7 @@ const Menu = () => {
     { title: "JavaScript2", url: "/javascript2" },
   ];
   return (
-    <div className="flex flex-row flex justify-between items-center max-w-6xl h-16 mx-auto px-4 bg-indigo-900">
+    <div className="flex flex-row justify-between items-center h-16 mx-auto px-4 bg-indigo-900">
       <header>
         <Link className="font-bold text-violet-100" to="/">
           빈칸 채우기 for 40th 스터디 카페
