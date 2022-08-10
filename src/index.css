@@ -15,6 +15,14 @@ main {
   @apply h-full;
 }
 
+span {
+  @apply text-violet-100;
+}
+
+button {
+  @apply bg-violet-500 hover:bg-violet-700 text-violet-100 font-bold py-2 px-4 rounded-full;
+}
+
 /* body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',

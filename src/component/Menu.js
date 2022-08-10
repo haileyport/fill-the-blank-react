@@ -10,9 +10,9 @@ const Menu = () => {
     { title: "JavaScript2", url: "/javascript2" },
   ];
   return (
-    <div className="flex flex-row flex justify-between items-center max-w-6xl h-16 mx-auto px-4 bg-emerald-600">
+    <div className="flex flex-row flex justify-between items-center max-w-6xl h-16 mx-auto px-4 bg-indigo-900">
       <header>
-        <Link className="text-amber-50" to="/">
+        <Link className="font-bold text-violet-100" to="/">
           빈칸 채우기 for 40th 스터디 카페
         </Link>
       </header>
@@ -21,7 +21,7 @@ const Menu = () => {
           return (
             <Link
               key={idx}
-              className="flex py-5 px-2 text-amber-50"
+              className="flex py-5 px-2 font-bold text-violet-100"
               to={el.url}
             >
               {el.title}

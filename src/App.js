@@ -17,7 +17,7 @@ function App() {
         <div>
           <Menu />
         </div>
-        <div className="h-screen bg-teal-800 border-2 border-rose-600">
+        <div className="h-screen bg-slate-500">
           <Routes>
             <Route path="/" element={<Main />}></Route>
             <Route path="/meta" element={<Meta />}></Route>
