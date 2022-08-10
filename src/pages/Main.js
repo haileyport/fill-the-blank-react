@@ -2,10 +2,8 @@ import React, { useState } from "react";
 import Layout from "./Layout";
 
 const MainContents = () => {
-  const css =
-    "rounded-md focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-gray-800 ";
   const [text, setText] = useState("");
-  const [newCSs, setNewCss] = useState(css);
+  const [newCSs, setNewCss] = useState("");
   const data = {
     hello: "안녕하세요",
   };
@@ -17,21 +15,22 @@ const MainContents = () => {
   const answerHandler = (e) => {
     e.preventDefault();
     if (data.hello === text) {
-      setNewCss(`${css}bg-green-100`);
+      setNewCss(`bg-green-100`);
     } else {
-      setNewCss(`${css}bg-red-100`);
+      setNewCss(`bg-red-100`);
       setText("");
     }
   };
   return (
     <>
-      <span className="text-2xl">빈칸 채우기 for 40th 스터디 카페</span>
+      <span className="text-2xl font-bold">
+        빈칸 채우기 for 40th 스터디 카페
+      </span>
       <br />
-      <span className="text-xl">빈칸채우기 하는법</span>
+      <span className="text-xl font-bold">빈칸채우기 하는법</span>
       <br />
       <br />
       <span className="text-gray-800">
-        {/* TODO: 정답인 경우 focus bg 변경 */}
         <input
           id="hello"
           type="text"
@@ -59,7 +58,9 @@ const MainContents = () => {
       </span>
       <br />
       <br />
-      <button onClick={answerHandler}>제출</button>
+      <button className="w-[80px]" onClick={answerHandler}>
+        제출
+      </button>
     </>
   );
 };
