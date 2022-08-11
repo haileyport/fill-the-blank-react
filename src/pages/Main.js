@@ -1,12 +1,10 @@
 import React, { useState } from "react";
 import Layout from "./Layout";
+import { data } from "./../data/dummyData";
 
 const MainContents = () => {
   const [text, setText] = useState("");
-  const [newCSs, setNewCss] = useState("");
-  const data = {
-    hello: "안녕하세요",
-  };
+  const [newCss, setnewCss] = useState("");
 
   const textHandler = (e) => {
     setText(e.target.value);
@@ -14,10 +12,10 @@ const MainContents = () => {
 
   const answerHandler = (e) => {
     e.preventDefault();
-    if (data.hello === text) {
-      setNewCss(`bg-green-100`);
+    if (data.main.hi === text) {
+      setnewCss(`bg-green-100`);
     } else {
-      setNewCss(`bg-red-100`);
+      setnewCss(`bg-red-100`);
       setText("");
     }
   };
@@ -37,7 +35,7 @@ const MainContents = () => {
           placeholder="안????"
           value={text || ""}
           onChange={textHandler}
-          className={newCSs}
+          className={newCss}
         />
       </span>
       <br />

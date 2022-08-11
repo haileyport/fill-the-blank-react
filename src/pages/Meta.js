@@ -1,24 +1,25 @@
 import React, { useState } from "react";
 import Layout from "./Layout";
+import { data } from "./../data/dummyData";
 
 const MetaContents = () => {
   const [text, setText] = useState("");
-  const [newCSs, setNewCss] = useState("");
-  const data = {
-    brainstorm: "브레인스톰",
-  };
+  const [newCss, setnewCss] = useState("");
 
+  console.log(data);
   const textHandler = (e) => {
     setText(e.target.value);
   };
 
   const answerHandler = (e) => {
     e.preventDefault();
-    if (data.brainstorm === text) {
-      setNewCss(`bg-green-100`);
-    } else {
-      setNewCss(`bg-red-100`);
-      setText("");
+    for (let key in data.meta) {
+      if (data.meta[key] === text) {
+        setnewCss(`bg-green-100`);
+      } else {
+        setnewCss(`bg-red-100`);
+        setText("");
+      }
     }
   };
 
@@ -39,7 +40,7 @@ const MetaContents = () => {
         placeholder="???스톰"
         value={text || ""}
         onChange={textHandler}
-        className={newCSs}
+        className={newCss}
       />
       <br />
       <span>완성되지 않은 생각들이 부딪히며 사고가 확장되는 것</span>

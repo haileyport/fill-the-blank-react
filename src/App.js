@@ -13,11 +13,11 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="min-h-screen max-h-screen bg-slate-500">
         <div>
           <Menu />
         </div>
-        <div className="h-screen bg-slate-500">
+        <div className="bg-slate-500">
           <Routes>
             <Route path="/" element={<Main />}></Route>
             <Route path="/meta" element={<Meta />}></Route>
