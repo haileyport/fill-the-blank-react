@@ -16,7 +16,7 @@ main {
 }
 
 span {
-  @apply text-violet-100;
+  @apply text-violet-100 mb-2;
 }
 
 input {
