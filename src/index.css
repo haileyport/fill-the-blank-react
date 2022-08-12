@@ -6,19 +6,14 @@ html {
   @apply h-full;
 }
 body {
-  @apply h-full;
+  @apply h-full bg-slate-500;
 }
 div {
   @apply h-full;
 }
-main {
-  @apply h-full;
-}
-
 span {
   @apply text-violet-100 mb-2;
 }
-
 input {
   @apply w-fit rounded-md focus:outline-none focus:border-sky-500 focus:ring-sky-500 focus:ring-1 text-gray-800;
 }

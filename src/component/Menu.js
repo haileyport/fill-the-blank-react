@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Menu = () => {
   const category = [
@@ -10,22 +10,20 @@ const Menu = () => {
     { title: "JavaScript2", url: "/javascript2" },
   ];
   return (
-    <div className="flex flex-row justify-between items-center h-16 mx-auto px-4 bg-indigo-900">
-      <header>
-        <Link className="font-bold text-violet-100" to="/">
-          빈칸 채우기 for 40th 스터디 카페
-        </Link>
-      </header>
+    <nav className="fixed w-full flex flex-row justify-between items-center h-16 mx-auto px-4 bg-indigo-900">
+      <NavLink className="font-bold text-violet-100" to="/">
+        빈칸 채우기 for 40th 스터디 카페
+      </NavLink>
       <div className="hidden md:flex space-x-1">
         {category.map((el, idx) => {
           return (
-            <Link
+            <NavLink
               key={idx}
               className="flex py-5 px-2 font-bold text-violet-100"
               to={el.url}
             >
               {el.title}
-            </Link>
+            </NavLink>
           );
         })}
       </div>
@@ -49,7 +47,7 @@ const Menu = () => {
           </svg>
         </button>
       </div> */}
-    </div>
+    </nav>
   );
 };
 

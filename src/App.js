@@ -13,11 +13,9 @@ import "./App.css";
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen max-h-screen bg-slate-500">
-        <div>
-          <Menu />
-        </div>
-        <div className="bg-slate-500">
+      <div>
+        <Menu />
+        <div className="pt-36 h-auto">
           <Routes>
             <Route path="/" element={<Main />}></Route>
             <Route path="/meta" element={<Meta />}></Route>
