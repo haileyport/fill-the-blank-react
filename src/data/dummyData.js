@@ -9,6 +9,7 @@ export const data = {
     tree: "트리",
     span: "<span>",
     img: "<img>",
+    link: "<link>",
     a: "<a>",
     ul: "<ul>",
     ol: "<ol>",

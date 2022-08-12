@@ -28,7 +28,7 @@ const HtmlContents = () => {
 
   const answerHandler = (e) => {
     e.preventDefault();
-    for (let key in data.css) {
+    for (let key in data.html) {
       if (key === text[key]) {
         changeCss(key, `bg-green-100`);
       } else {
@@ -46,7 +46,7 @@ const HtmlContents = () => {
         placeholder={place}
         value={text[name] || ""}
         onChange={textHandler}
-        className={newCss.name}
+        className={newCss[name]}
       />
     );
   };
