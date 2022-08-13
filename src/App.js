@@ -12,7 +12,7 @@ import "./App.css";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <div>
         <Menu />
         <div className="pt-36 h-auto">
