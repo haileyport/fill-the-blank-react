@@ -6,7 +6,6 @@ const MetaContents = () => {
   const [text, setText] = useState("");
   const [newCss, setnewCss] = useState("");
 
-  console.log(data);
   const textHandler = (e) => {
     setText(e.target.value);
   };
