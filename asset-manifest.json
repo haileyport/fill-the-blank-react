@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fill-the-blank-react/static/css/main.ec3e7302.css",
+    "main.js": "/fill-the-blank-react/static/js/main.87c29afa.js",
+    "static/js/787.0cdf3f92.chunk.js": "/fill-the-blank-react/static/js/787.0cdf3f92.chunk.js",
+    "index.html": "/fill-the-blank-react/index.html",
+    "main.ec3e7302.css.map": "/fill-the-blank-react/static/css/main.ec3e7302.css.map",
+    "main.87c29afa.js.map": "/fill-the-blank-react/static/js/main.87c29afa.js.map",
+    "787.0cdf3f92.chunk.js.map": "/fill-the-blank-react/static/js/787.0cdf3f92.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ec3e7302.css",
+    "static/js/main.87c29afa.js"
+  ]
+}
