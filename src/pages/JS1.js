@@ -1,10 +1,14 @@
 import React, { useState } from "react";
 import Layout from "./Layout";
 import { data } from "./../data/dummyData";
+import { inputTag } from "./../utils/input";
 
 const JS1Contents = () => {
   const [text, setText] = useState({});
   const [newCss, setNewCss] = useState({});
+
+  const inputContents = (name, place) =>
+    inputTag(name, place, text, textHandler, newCss);
 
   const textHandler = (e) => {
     changeText(e.target.id, e.target.value);
@@ -36,19 +40,6 @@ const JS1Contents = () => {
         changeText(key, "");
       }
     }
-  };
-
-  const inputContents = (name, place) => {
-    return (
-      <input
-        id={name}
-        type="text"
-        placeholder={place}
-        value={text[name] || ""}
-        onChange={textHandler}
-        className={newCss[name]}
-      />
-    );
   };
 
   return (

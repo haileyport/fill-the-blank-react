@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Layout from "./Layout";
 import { data } from "./../data/dummyData";
+import { inputTag } from "./../utils/input";
 
 const HtmlContents = () => {
   const [text, setText] = useState({});
@@ -38,18 +39,8 @@ const HtmlContents = () => {
     }
   };
 
-  const inputContents = (name, place) => {
-    return (
-      <input
-        id={name}
-        type="text"
-        placeholder={place}
-        value={text[name] || ""}
-        onChange={textHandler}
-        className={newCss[name]}
-      />
-    );
-  };
+  const inputContents = (name, place) =>
+    inputTag(name, place, text, textHandler, newCss);
 
   return (
     <>
