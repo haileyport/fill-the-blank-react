@@ -11,8 +11,8 @@ const Layout = ({ contents }) => {
       </div>
       <footer className="bottom-0 pt-12 left-0 z-20 p-4 w-full">
         <p>
-          © 2022 코드스테이츠 SEB FE 40기 박연우, 허정우, 전은혜 | 빈칸 채우기 -
-          40th 스터디 카페
+          © 2022 코드스테이츠 SEB FE 40기 박연우, 전은혜, 허정우 | 빈칸 채우기
+          Ver.2.0 - 40th 스터디 카페
         </p>
       </footer>
     </>
