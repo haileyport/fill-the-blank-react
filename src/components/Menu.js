@@ -8,6 +8,7 @@ const Menu = () => {
     { title: "CSS", url: "/css" },
     { title: "JavaScript1", url: "/javascript1" },
     { title: "JavaScript2", url: "/javascript2" },
+    { title: "Test", url: "/test" },
   ];
   return (
     <nav className="fixed w-full flex flex-row justify-between items-center h-16 mx-auto px-4 bg-indigo-900">

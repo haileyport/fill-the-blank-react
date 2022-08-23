@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Layout from "./Layout";
+import Layout from "../components/Layout";
 import { data } from "./../data/dummyData";
 
 const MetaContents = () => {

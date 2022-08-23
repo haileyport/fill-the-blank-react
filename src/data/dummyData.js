@@ -58,4 +58,10 @@ export const data = {
     reset: "초기화",
   },
   js2: {},
+  test: {
+    flex: "flex",
+    "flex-direction": "flex-direction",
+    "justify-content": "justify-content",
+    "align-item": "align-item",
+  },
 };
