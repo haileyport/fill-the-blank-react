@@ -6,7 +6,6 @@ import Html from "./pages/Html";
 import CSS from "./pages/CSS";
 import JS1 from "./pages/JS1";
 import JS2 from "./pages/JS2";
-import Test from "./pages/Test";
 
 import Menu from "./components/Menu";
 
@@ -25,7 +24,6 @@ function App() {
             <Route path="/css" element={<CSS />}></Route>
             <Route path="/javascript1" element={<JS1 />}></Route>
             <Route path="/javascript2" element={<JS2 />}></Route>
-            <Route path="/test" element={<Test />}></Route>
           </Routes>
         </div>
       </div>
