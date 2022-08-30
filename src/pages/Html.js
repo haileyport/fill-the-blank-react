@@ -79,9 +79,13 @@ const HtmlContents = () => {
       )}
       <br />
       <br />
-      <button className="w-[80px]" onClick={answerHandler}>
-        제출
-      </button>
+      {goPage <= Object.keys(pages).length ? (
+        <button className="w-[80px]" onClick={answerHandler}>
+          제출
+        </button>
+      ) : (
+        <>{/* 다음 섹션으로 넘어가는 로직 적용 필요 */}</>
+      )}
     </>
   );
 };

@@ -14,7 +14,7 @@ const Page1 = ({ inputContents }) => {
       <br />
       <span className="text-xl font-bold">
         HTML은{"\n"}
-        {inputContents("tree", "t???")}
+        {inputContents("tree", "??")}
         {"\n"}구조입니다.
       </span>
       <span>부모 노드, 자식 노드로 구성되어 있습니다.</span>
