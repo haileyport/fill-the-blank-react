@@ -6,7 +6,8 @@ import Html from "./pages/Html";
 import CSS from "./pages/CSS";
 import JS1 from "./pages/JS1";
 import JS2 from "./pages/JS2";
-import Menu from "./component/Menu";
+
+import Menu from "./components/Menu";
 
 import "./App.css";
 

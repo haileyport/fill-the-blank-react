@@ -1,10 +1,14 @@
 import React, { useState } from "react";
-import Layout from "./Layout";
+import Layout from "../components/Layout";
 import { data } from "./../data/dummyData";
+import { inputTag } from "./../utils/input";
 
 const CssContents = () => {
   const [text, setText] = useState({});
   const [newCss, setNewCss] = useState({});
+
+  const inputContents = (name, place) =>
+    inputTag(name, place, text, textHandler, newCss);
 
   const textHandler = (e) => {
     changeText(e.target.id, e.target.value);
@@ -56,15 +60,7 @@ const CssContents = () => {
       <br />
       <br />
       <span className="text-xl font-bold">
-        display:{"\n"}
-        <input
-          id="flex"
-          type="text"
-          placeholder="f???"
-          value={text["flex"] || ""}
-          onChange={textHandler}
-          className={newCss.flex}
-        />
+        display: {inputContents("flex", "f???")}
       </span>
       <br />
       <span>
@@ -78,41 +74,18 @@ const CssContents = () => {
       </span>
       <br />
       <span>
-        <input
-          id="flex-direction"
-          type="text"
-          placeholder="????-????????n"
-          value={text["flex-direction"] || ""}
-          onChange={textHandler}
-          className={newCss["flex-direction"]}
-        />
-        {"\n"}:{"\n"}정렬 축 정하기, 가본값은 가로 정렬, (row, column, ...)
+        {inputContents("flex-direction", "????-????????n")} : 정렬 축 정하기,
+        가본값은 가로 정렬, (row, column, ...)
       </span>
       <br />
       <span>
-        <input
-          id="justify-content"
-          type="text"
-          placeholder="???????-??????t"
-          value={text["justify-content"] || ""}
-          onChange={textHandler}
-          className={newCss["justify-content"]}
-        />
-        {"\n"}:{"\n"}자식 요소들을 축의 수평 방향으로 어떻게 정렬할 것인지
-        정합니다.
+        {inputContents("justify-content", "???????-??????t")} : 자식 요소들을
+        축의 수평 방향으로 어떻게 정렬할 것인지 정합니다.
       </span>
       <br />
       <span>
-        <input
-          id="align-item"
-          type="text"
-          placeholder="?????-???m"
-          value={text["align-item"] || ""}
-          onChange={textHandler}
-          className={newCss["align-item"]}
-        />
-        {"\n"}:{"\n"}자식 요소들을 축의 수직 방향으로 어떻게 정렬할 것인지
-        정합니다.
+        {inputContents("align-item", "?????-???m")} : 자식 요소들을 축의 수직
+        방향으로 어떻게 정렬할 것인지 정합니다.
       </span>
       <br />
       <br />
