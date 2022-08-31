@@ -3,9 +3,9 @@ import Layout from "../components/Layout";
 import { data } from "./../data/dummyData";
 import { inputTag } from "./../utils/input";
 
-import Page1 from "./HTML/htmlPage1";
-import Page2 from "./HTML/htmlPage2";
-import Page3 from "./HTML/htmlPage3";
+import Page1 from "./html/htmlPage1";
+import Page2 from "./html/htmlPage2";
+import Page3 from "./html/htmlPage3";
 
 const HtmlContents = () => {
   const [text, setText] = useState({});
