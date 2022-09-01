@@ -34,7 +34,6 @@ const Menu = () => {
           </div>
         </div>
 
-        {/* 햄버거 메뉴 컬럼화 필요*/}
         <div className="flex">
           <div className="md:hidden flex items-center">
             <button onClick={() => setMenuToggle(!menuToggle)}>
@@ -87,7 +86,7 @@ const Menu = () => {
           return (
             <NavLink
               key={idx}
-              className="block py-4 px-8 text-sm text-white font-semibold hover:bg-indigo-700"
+              className="block py-4 px-8 text-sm text-violet-100 font-semibold hover:bg-indigo-700"
               to={el.url}
             >
               {el.title}
