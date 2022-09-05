@@ -9,14 +9,12 @@ import JS2 from "./pages/JS2";
 
 import Menu from "./components/Menu";
 
-import "./App.css";
-
 function App() {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>
-      <div>
+      <div className="h-fit">
         <Menu />
-        <div className="pt-36 h-auto">
+        <div className="pt-36 h-auto ">
           <Routes>
             <Route path="/" element={<Main />}></Route>
             <Route path="/meta" element={<Meta />}></Route>
@@ -27,6 +25,12 @@ function App() {
           </Routes>
         </div>
       </div>
+      <footer className="pt-12 z-20 p-4 w-full">
+        <p>
+          © 2022 코드스테이츠 SEB FE 40기 박연우, 전은혜, 허정우 | 빈칸 채우기
+          Ver.2.0 - 40th 스터디 카페
+        </p>
+      </footer>
     </BrowserRouter>
   );
 }
