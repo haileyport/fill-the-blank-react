@@ -1,13 +1,12 @@
 const Page2 = ({ inputContents }) => {
   return (
     <>
-      <span className="text-xl font-bold">타입</span>
-      <br />
+      <span className="text-xl font-bold mb-8">타입</span>
       <span>변수에는 다양한 타입이 있습니다.</span> <br />
       <span>{inputContents("typeof", "t?????")}</span>
-      <span>타입을 확인 해볼 수 있는 키워드(메서드, 연산자)</span>
-      <br />
-      <br />
+      <span className="mb-12">
+        타입을 확인 해볼 수 있는 키워드(메서드, 연산자)
+      </span>
       <span className="text-xl font-bold">타입 확인</span>
       <span>
         console.log(typeof 'Hello World') : {inputContents("string", "s?????")}

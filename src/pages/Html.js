@@ -77,10 +77,8 @@ const HtmlContents = () => {
       ) : (
         pages[goPage]
       )}
-      <br />
-      <br />
       {goPage <= Object.keys(pages).length ? (
-        <button className="w-[80px]" onClick={answerHandler}>
+        <button className="w-[80px] mt-12" onClick={answerHandler}>
           제출
         </button>
       ) : (

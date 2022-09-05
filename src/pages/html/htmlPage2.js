@@ -1,8 +1,7 @@
 const Page2 = ({ inputContents }) => {
   return (
     <>
-      <span className="text-xl font-bold">자주 사용되는 태그들</span>
-      <br />
+      <span className="text-xl font-bold mb-8">자주 사용되는 태그들</span>
       <span>{`<div> : Divition`}</span>
       <span>{inputContents("span", "<s???>")} : Span</span>
       <span>{inputContents("img", "<i??>")} : Img</span>
