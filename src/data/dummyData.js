@@ -75,7 +75,34 @@ export const data = {
       reset: "초기화",
     },
   ],
-  js2: {},
+  js2: [
+    {
+      array: "배열",
+      index: "index",
+      undefined: "undefined",
+      pop: "pop()",
+      push: "push()",
+      shift: "shift()",
+      unshift: "unshift()",
+      indexOf: "indexOf()",
+      includes: "includes()",
+    },
+    {
+      object: "객체",
+      dot: "dot",
+      bracket: "bracket",
+    },
+    {
+      Objectkeys: "Object.keys()",
+      Objectvalues: "Object.values()",
+      Objectentries: "Object.entries()",
+      forin: "for-in",
+      gocha: "고차함수",
+      map: "map()",
+      filter: "filter()",
+      reduce: "reduce()",
+    },
+  ],
   test: [
     {
       flex: "flex",
