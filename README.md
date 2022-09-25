@@ -10,13 +10,8 @@ https://haileyport.github.io/fill-the-blank-react/
 
 ## Contributor
 
-| Name   | Major     | Position |
-| ------ | --------- | -------- |
-| 박연우 | front-end | 팀 리더  |
-| 전은혜 | front-end | 팀 멤버  |
-| 허정우 | front-end | 팀 멤버  |
-
 아이디어 및 초기 컨텐츠 제공자 - 박연우 @HyeonWooGa
+컨텐츠 공여자 - 전은혜, 허정우 @heoputer
 
 ## Update Note
 
