@@ -136,4 +136,15 @@ export const data = {
       dependency: "종속성 배열",
     },
   ],
+  git: [
+    {
+      git: "git",
+      commit: "commit",
+    },
+    {
+      clone: "clone",
+      push: "push",
+      pull: "pull",
+    },
+  ],
 };
