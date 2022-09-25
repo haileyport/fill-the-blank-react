@@ -84,7 +84,7 @@ const CssContents = () => {
         방향으로 어떻게 정렬할 것인지 정합니다.
       </span>
       <button className="w-[80px]" onClick={answerHandler}>
-        제출
+        정답 확인
       </button>
     </>
   );

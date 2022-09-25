@@ -50,7 +50,7 @@ const MainContents = () => {
         페이지의 빈칸 전체 작성후 제출을 클릭하여 확인하면서 진행하시면 됩니다.
       </span>
       <button className="w-[80px]" onClick={answerHandler}>
-        제출
+        정답 확인
       </button>
     </>
   );

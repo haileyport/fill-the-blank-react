@@ -41,7 +41,7 @@ const MetaContents = () => {
         완성되지 않은 생각들이 부딪히며 사고가 확장되는 것
       </span>
       <button className="w-[80px]" onClick={answerHandler}>
-        제출
+        정답 확인
       </button>
     </>
   );

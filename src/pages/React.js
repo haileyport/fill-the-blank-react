@@ -3,14 +3,15 @@ import Layout from "../components/Layout";
 import { data } from "./../data/dummyData";
 import { inputTag } from "./../utils/input";
 
-import Page1 from "./JS1/jsPage1";
-import Page2 from "./JS1/jsPage2";
-import Page3 from "./JS1/jsPage3";
-import Page4 from "./JS1/jsPage4";
-import Page5 from "./JS1/jsPage5";
-import Page6 from "./JS1/jsPage6";
+import Page1 from "./React/reactPage1";
+import Page2 from "./React/reactPage2";
+import Page3 from "./React/reactPage3";
+import Page4 from "./React/reactPage4";
+import Page5 from "./React/reactPage5";
+import Page6 from "./React/reactPage6";
+import Page7 from "./React/reactPage7";
 
-const JS1Contents = () => {
+const ReactContents = () => {
   const [text, setText] = useState({});
   const [newCss, setNewCss] = useState({});
   const [isAns, setIsAns] = useState({});
@@ -41,7 +42,7 @@ const JS1Contents = () => {
 
   const answerHandler = (e) => {
     e.preventDefault();
-    const range = data.js1[goPage - 1];
+    const range = data.react[goPage - 1];
     for (let key in range) {
       if (range[key] === text[key]) {
         changeCss(key, `bg-green-100`);
@@ -71,6 +72,7 @@ const JS1Contents = () => {
     4: <Page4 inputContents={inputContents} />,
     5: <Page5 inputContents={inputContents} />,
     6: <Page6 inputContents={inputContents} />,
+    7: <Page7 inputContents={inputContents} />,
   };
 
   return (
@@ -95,8 +97,8 @@ const JS1Contents = () => {
   );
 };
 
-const JS1 = () => {
-  return <Layout contents={<JS1Contents />} />;
+const ReactQuiz = () => {
+  return <Layout contents={<ReactContents />} />;
 };
 
-export default JS1;
+export default ReactQuiz;

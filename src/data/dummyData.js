@@ -103,14 +103,37 @@ export const data = {
       reduce: "reduce()",
     },
   ],
-  test: [
+  react: [
     {
-      flex: "flex",
+      declare: "선언형",
+      component: "컴포넌트",
     },
     {
-      "flex-direction": "flex-direction",
-      "justify-content": "justify-content",
-      "align-item": "align-item",
+      browser: "브라우저",
+      seo: "SEO",
+    },
+    {
+      browserrouter: "<BrowserRouter>",
+      routes: "<Routes>",
+      route: "<Route>",
+      link: "<Link>",
+    },
+    {
+      object: "객체",
+      useState: "useState",
+    },
+    {
+      tree: "트리",
+      bottomUp: "상향식",
+      topDown: "하향식",
+    },
+    {
+      state: "state",
+      getUp: "끌어올리기",
+    },
+    {
+      useEffect: "useEffect",
+      dependency: "종속성 배열",
     },
   ],
 };

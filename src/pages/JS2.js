@@ -71,14 +71,16 @@ const JS2Contents = () => {
     <>
       {goPage > Object.keys(pages).length ? (
         <>
-          <div>축하합니다! 다음 문제로 넘어가세요.</div>
+          <div className="font-bold text-white">
+            축하합니다!❤️‍🔥 다음 문제로 넘어가세요.
+          </div>
         </>
       ) : (
         pages[goPage]
       )}
       {goPage <= Object.keys(pages).length ? (
         <button className="w-[80px] mt-12" onClick={answerHandler}>
-          제출
+          다음
         </button>
       ) : (
         <>{/* 다음 섹션으로 넘어가는 로직 적용 필요 */}</>

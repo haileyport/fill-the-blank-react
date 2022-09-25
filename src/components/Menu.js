@@ -10,6 +10,7 @@ const Menu = () => {
     { title: "CSS", url: "/css" },
     { title: "JavaScript1", url: "/javascript1" },
     { title: "JavaScript2", url: "/javascript2" },
+    { title: "React", url: "/react" },
   ];
   return (
     <nav className="fixed w-full h-16 items-center mx-auto bg-indigo-900 z-10">
