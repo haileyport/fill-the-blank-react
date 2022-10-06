@@ -10,8 +10,8 @@ https://haileyport.github.io/fill-the-blank-react/
 
 ## Contributor
 
-아이디어 및 초기 컨텐츠 제공자 - 박연우 @HyeonWooGa
-컨텐츠 공여자 - 전은혜, 허정우 @heoputer
+아이디어 및 초기 컨텐츠 제공자 - 박연우 [@HyeonWooGa](https://github.com/HyeonWooGa)
+컨텐츠 공여자 - 전은혜, 허정우 [@heoputer](https://github.com/heoputer)
 
 ## Update Note
 
