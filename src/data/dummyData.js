@@ -161,4 +161,25 @@ export const data = {
       polymorphism: '다형성',
     },
   ],
+  network: [
+    {
+      url: 'url',
+      logical: '논리',
+      physical: '물리',
+      tcp: 'TCP',
+      render: '렌더링',
+    },
+    {
+      protocol: '프로토콜',
+      first: '첫번째',
+    },
+    {
+      server: '서버',
+      client: '클라이언트',
+      interaction: '상호작용',
+      webFirst: '첫화면',
+      interaction2: '상호작용',
+      experiance: '사용자경험',
+    },
+  ],
 };

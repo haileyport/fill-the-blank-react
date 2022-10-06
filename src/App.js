@@ -9,6 +9,7 @@ import JS2 from './pages/JS2';
 import ReactQuiz from './pages/React';
 import Git from './pages/Git';
 import Obj from './pages/Object';
+import Network from './pages/Network';
 
 import Menu from './components/Menu';
 
@@ -28,6 +29,7 @@ function App() {
             <Route path='/react' element={<ReactQuiz />}></Route>
             <Route path='/git' element={<Git />}></Route>
             <Route path='/obj' element={<Obj />}></Route>
+            <Route path='/network' element={<Network />}></Route>
           </Routes>
         </div>
       </div>

@@ -13,6 +13,7 @@ const Menu = () => {
     { title: 'React', url: '/react' },
     { title: 'Git', url: '/git' },
     { title: '객체지향', url: '/obj' },
+    { title: '네트워크', url: '/network' },
   ];
   return (
     <nav className='fixed w-full h-16 items-center mx-auto bg-indigo-900 z-10'>
