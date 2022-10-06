@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import Layout from '../components/Layout';
-import { data } from '../data/dummyData';
-import { inputTag } from '../utils/input';
+import { data } from './../data/dummyData';
+import { inputTag } from './../utils/input';
 
-import Page1 from './git/gitPage1';
-import Page2 from './git/gitPage2';
+import Page1 from './Object/objectPage1';
 
-const GitContents = () => {
+const ObjectContents = () => {
   const [text, setText] = useState({});
   const [newCss, setNewCss] = useState({});
   const [isAns, setIsAns] = useState({});
@@ -37,7 +36,7 @@ const GitContents = () => {
 
   const answerHandler = (e) => {
     e.preventDefault();
-    const range = data.git[goPage - 1];
+    const range = data.obj[goPage - 1];
     for (let key in range) {
       if (range[key] === text[key]) {
         changeCss(key, `bg-green-100`);
@@ -62,7 +61,6 @@ const GitContents = () => {
 
   const pages = {
     1: <Page1 inputContents={inputContents} />,
-    2: <Page2 inputContents={inputContents} />,
   };
 
   return (
@@ -87,8 +85,8 @@ const GitContents = () => {
   );
 };
 
-const Git = () => {
-  return <Layout contents={<GitContents />} />;
+const Obj = () => {
+  return <Layout contents={<ObjectContents />} />;
 };
 
-export default Git;
+export default Obj;
