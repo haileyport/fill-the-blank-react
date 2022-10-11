@@ -14,6 +14,7 @@ const Menu = () => {
     { title: 'Git', url: '/git' },
     { title: '객체지향', url: '/obj' },
     { title: '네트워크', url: '/network' },
+    { title: '스코프&재귀', url: '/recursion' },
   ];
   return (
     <nav className='fixed w-full h-16 items-center mx-auto bg-indigo-900 z-10'>

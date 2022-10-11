@@ -3,9 +3,8 @@ import Layout from '../components/Layout';
 import { data } from './../data/dummyData';
 import { inputTag } from './../utils/input';
 
-import Page1 from './Network/networkPage1';
-import Page2 from './Network/networkPage2';
-import Page3 from './Network/networkPage3';
+import Page1 from './Recursion/recursionPage1';
+import Page2 from './Recursion/recursionPage2';
 
 const RecursionContents = () => {
   const [text, setText] = useState({});
@@ -38,7 +37,7 @@ const RecursionContents = () => {
 
   const answerHandler = (e) => {
     e.preventDefault();
-    const range = data.network[goPage - 1];
+    const range = data.recursion[goPage - 1];
     for (let key in range) {
       if (range[key] === text[key]) {
         changeCss(key, `bg-green-100`);
@@ -64,7 +63,6 @@ const RecursionContents = () => {
   const pages = {
     1: <Page1 inputContents={inputContents} />,
     2: <Page2 inputContents={inputContents} />,
-    3: <Page3 inputContents={inputContents} />,
   };
 
   return (

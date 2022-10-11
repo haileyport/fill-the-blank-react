@@ -10,6 +10,7 @@ import ReactQuiz from './pages/React';
 import Git from './pages/Git';
 import Obj from './pages/Object';
 import Network from './pages/Network';
+import Recursion from './pages/Recursion';
 
 import Menu from './components/Menu';
 
@@ -30,6 +31,7 @@ function App() {
             <Route path='/git' element={<Git />}></Route>
             <Route path='/obj' element={<Obj />}></Route>
             <Route path='/network' element={<Network />}></Route>
+            <Route path='/recursion' element={<Recursion />}></Route>
           </Routes>
         </div>
       </div>

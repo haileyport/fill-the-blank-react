@@ -182,4 +182,19 @@ export const data = {
       experiance: '사용자경험',
     },
   ],
+  recursion: [
+    {
+      scope: '스코프',
+      global: '전역 스코프',
+      local: '지역 스코프',
+      block: '블록 스코프',
+      func: '함수 스코프',
+      var: 'var',
+      sideEffect: '사이트 이펙트',
+    },
+    {
+      closer: '클로저',
+      recursion: '재귀함수',
+    },
+  ],
 };
