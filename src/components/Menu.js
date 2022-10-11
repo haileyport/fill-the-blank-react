@@ -24,7 +24,7 @@ const Menu = () => {
           <NavLink className='font-bold text-violet-100' to='/'>
             빈칸 채우기 for 40th 스터디 카페
           </NavLink>
-          <div className='hidden md:flex space-x-1'>
+          <div className='hidden xl:flex space-x-1'>
             {category.map((el, idx) => {
               return (
                 <NavLink
@@ -40,7 +40,7 @@ const Menu = () => {
         </div>
 
         <div className='flex'>
-          <div className='md:hidden flex items-center'>
+          <div className='xl:hidden flex items-center'>
             <button onClick={() => setMenuToggle(!menuToggle)}>
               {menuToggle ? (
                 <svg
