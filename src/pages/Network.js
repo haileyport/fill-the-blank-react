@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Button from '../components/Button';
 import Layout from '../components/Layout';
 import { data } from './../data/dummyData';
 import { inputTag } from './../utils/input';
@@ -79,9 +80,7 @@ const NetworkContents = () => {
         pages[goPage]
       )}
       {goPage <= Object.keys(pages).length ? (
-        <button className='w-[80px] mt-12' onClick={answerHandler}>
-          다음
-        </button>
+        <Button answerHandler={answerHandler} text='다음'></Button>
       ) : (
         <>{/* 다음 섹션으로 넘어가는 로직 적용 필요 */}</>
       )}
