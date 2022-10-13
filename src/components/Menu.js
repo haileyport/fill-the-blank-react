@@ -81,7 +81,7 @@ const Menu = () => {
       {/* mobile menu items */}
       <div
         className={classNames(
-          'flex flex-col md:hidden w-full h-fit bg-indigo-900 bg-opacity-80	',
+          'flex flex-col xl:hidden w-full h-fit bg-indigo-900 bg-opacity-80	',
           {
             hidden: !menuToggle,
           }
